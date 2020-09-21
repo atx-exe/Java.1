@@ -1,7 +1,6 @@
 package L6;
 
-import L6.animal.Cat;
-import L6.animal.Dog;
+import L6.animal.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,24 +10,24 @@ public class Main {
         //4. При попытке животного выполнить одно из этих действий, оно должно сообщить результат в консоль. (Например, dog1.run(150); -> результат: run: true)
         //5. * Добавить животным разброс в ограничениях. То есть у одной собаки ограничение на бег может быть 400 м., у другой 600 м.
 
-        Cat cat = new Cat("Barsik");
-        Dog dog = new Dog("Tuzik", 300);
-        Dog dog2 = new Dog("Palkan", 600);
+        Cat cat = new Cat(200,2.2f);
+        Dog dog = new Dog(400,200,0.8f);
+        Dog dog2 = new Dog(320,180,1.4f);
 
-        System.out.println(cat.getName() + " " + cat.run(299));
-        System.out.println(cat.getName() + " " + cat.run(199));
-        System.out.println(cat.getName() + " " + cat.run(99));
-        System.out.println(dog.getName() + " " + dog.run(220));
-        System.out.println(dog.getName() + " " + dog.run(100));
-        System.out.println(dog2.getName() + " " + dog2.run(220));
-        System.out.println(dog2.getName() + " " + dog2.run(100) + "\n");
+        System.out.println(cat.getType() + " " + cat.run(299));
+        System.out.println(cat.getType() + " " + cat.run(199));
+        System.out.println(cat.getType() + " " + cat.run(99));
+        System.out.println(dog.getType() + " " + dog.run(220));
+        System.out.println(dog.getType() + " " + dog.run(100));
+        System.out.println(dog2.getType() + " " + dog2.run(220));
+        System.out.println(dog2.getType() + " " + dog2.run(100) + "\n");
 
-        System.out.println(cat.getName() + " " + cat.jump(2));
-        System.out.println(cat.getName() + " " + cat.jump(2.5));
-        System.out.println(dog.getName() + " " + dog.jump(0.3));
-        System.out.println(dog.getName() + " " + dog.jump(0.6) + "\n");
+        System.out.println(cat.getType() + " " + cat.jump(2f));
+        System.out.println(cat.getType() + " " + cat.jump(2.5f));
+        System.out.println(dog.getType() + " " + dog.jump(0.3f));
+        System.out.println(dog.getType() + " " + dog.jump(0.6f) + "\n");
 
-        System.out.println(dog.getName() + " " + dog.swim(9));
-        System.out.println(dog.getName() + " " + dog.swim(30));
+        System.out.println(dog.getType() + " " + dog.swim(9));
+        System.out.println(dog.getType() + " " + dog.swim(30));
     }
 }
