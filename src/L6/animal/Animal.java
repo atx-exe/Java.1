@@ -55,4 +55,14 @@ public abstract class Animal {
             return true;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "type='" + type + '\'' +
+                ", maxRunDistance=" + maxRunDistance +
+                ", maxJumpHeight=" + maxJumpHeight +
+                ", maxSwimDistance=" + maxSwimDistance +
+                '}';
+    }
 }
