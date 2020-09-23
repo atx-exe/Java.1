@@ -16,12 +16,12 @@ public class Main {
         Plate plate = new Plate(55);
 
         plate.info();
+        
         for (Cat cat : cats) {
             cat.eat(plate);
             plate.info();
             cat.info();
             System.out.println();
         }
-
     }
 }
