@@ -16,6 +16,7 @@ public class Main {
         Plate plate = new Plate(55);
 
         plate.info();
+        plate.addFood(10);
         
         for (Cat cat : cats) {
             cat.eat(plate);
