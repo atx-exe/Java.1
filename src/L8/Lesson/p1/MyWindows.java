@@ -1,4 +1,4 @@
-package L8.Lesson;
+package L8.Lesson.p1;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -27,6 +27,10 @@ public class MyWindows extends JFrame {
         jpLeft.add(jbt2);
         JButton jbt3 = new JButton("Button #3");
         jpLeft.add(jbt3);
+        JLabel jLabel = new JLabel("TEST");
+        jpLeft.add(jLabel);
+        JTextField jTextField = new JTextField();
+        jpLeft.add(jTextField);
 
         JPanel jpRight = new JPanel(); //Создание панели для в правой (второй) ячейки
         add(jpRight); //Добавление ее в правую (вторую) ячейку

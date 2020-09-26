@@ -1,4 +1,4 @@
-package L8.Lesson;
+package L8.Lesson.p1;
 
 import javax.swing.*;
 import java.awt.*;
