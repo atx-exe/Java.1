@@ -2,10 +2,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <VBox fx:controller="L8.Lesson.P2.Controller"
-      xmlns:fx="http://javafx.com/fxml">
+      xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css">
     <MenuBar BorderPane.alignment="TOP_CENTER">
         <menus>
-            <Menu text="Действия">
+            <Menu text="Файл">
                 <items>
                     <MenuItem onAction="#clickNew" text="Новый документ"/>
                     <MenuItem onAction="#clickLoad" text="Загрузить 1.txt"/>
@@ -16,5 +16,5 @@
             </Menu>
         </menus>
     </MenuBar>
-    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS"/>
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS" styleClass="myTextArea"/>
 </VBox>
