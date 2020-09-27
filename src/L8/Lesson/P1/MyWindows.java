@@ -1,4 +1,4 @@
-package L8.Lesson.p1;
+package L8.Lesson.P1;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

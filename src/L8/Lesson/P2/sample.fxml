@@ -1,0 +1,20 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="L8.Lesson.P2.Controller"
+      xmlns:fx="http://javafx.com/fxml">
+    <MenuBar BorderPane.alignment="TOP_CENTER">
+        <menus>
+            <Menu text="Действия">
+                <items>
+                    <MenuItem onAction="#clickNew" text="Новый документ"/>
+                    <MenuItem onAction="#clickLoad" text="Загрузить 1.txt"/>
+                    <MenuItem onAction="#clickSave" text="Сохранить 2.txt"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem onAction="#clickOnExit" text="Выход"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS"/>
+</VBox>
