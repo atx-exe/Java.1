@@ -1,4 +1,4 @@
-package L8;
+package L8.Exam;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
