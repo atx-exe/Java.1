@@ -1,13 +1,24 @@
 package L8.Exam;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+
+import javax.swing.plaf.basic.BasicTabbedPaneUI;
+import javax.swing.plaf.basic.BasicTreeUI;
+import java.awt.event.ActionListener;
+import java.io.ObjectInputStream;
+import java.lang.reflect.Field;
+import java.util.logging.Handler;
 
 
 public class Controller {
     public Label jlbMenu;
     public GridPane gpMap;
+    public Button bt00;
+    public Button bt01;
 
     public void onActPvP(ActionEvent actionEvent) {
         jlbMenu.setText("Set PvP");
@@ -23,5 +34,11 @@ public class Controller {
     public void onActPCvPC(ActionEvent actionEvent) {
         jlbMenu.setText("Set PCvPC");
         new Game(Player.PC, Player.PC);
+    }
+
+    public void btMap(ActionEvent actionEvent) {
+        bt00.setText(bt00.getId());
+//        bt01.setBackground(Color.AQUA);
+        bt01.setText(bt01.getId());
     }
 }
