@@ -4,15 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.scene.paint.Color;
-
-import javax.swing.plaf.basic.BasicTabbedPaneUI;
-import javax.swing.plaf.basic.BasicTreeUI;
-import java.awt.event.ActionListener;
-import java.io.ObjectInputStream;
-import java.lang.reflect.Field;
-import java.util.logging.Handler;
-
 
 public class Controller {
     public Label jlbMenu;
