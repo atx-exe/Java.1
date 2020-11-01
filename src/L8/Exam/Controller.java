@@ -20,19 +20,16 @@ public class Controller {
 
     public void onActPvP(ActionEvent actionEvent) {
         jlbMenu.setText("Set PvP");
-        new Game(Player.Human, Player.Human);
         gpMap.setDisable(false);
     }
 
     public void onActPvPC(ActionEvent actionEvent) {
         jlbMenu.setText("Set PvPC");
-        new Game(Player.Human, Player.PC);
         gpMap.setDisable(false);
     }
 
     public void onActPCvPC(ActionEvent actionEvent) {
         jlbMenu.setText("Set PCvPC");
-        new Game(Player.PC, Player.PC);
         gpMap.setDisable(false);
     }
 

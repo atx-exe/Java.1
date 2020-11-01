@@ -1,0 +1,27 @@
+.vbox {
+    -fx-alignment: center;
+    -fx-padding: 30 30 30 30;
+    -fx-spacing: 20;
+    -fx-background-color: thistle;
+}
+
+.label {
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+.label.title {
+    -fx-text-fill: black;
+    -fx-font-size: 28px;
+    -fx-underline: true;
+}
+
+.button {
+    -fx-max-width: 130px;
+}
+
+#labelmmmmmmmmmmm:hover {
+    -fx-background-color: #99ffe0;
+    -fx-underline: true;
+    -fx-text-fill: red;
+}

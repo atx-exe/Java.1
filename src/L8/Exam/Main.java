@@ -9,12 +9,13 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent game = FXMLLoader.load(getClass().getResource("game.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("gameMenu.fxml"));
+        primaryStage.setScene(new Scene(game));
+
         primaryStage.setTitle("XO Game");
         primaryStage.setResizable(false);
         primaryStage.setHeight(400);
         primaryStage.setWidth(300);
-        primaryStage.setScene(new Scene(game));
         primaryStage.show();
     }
 
