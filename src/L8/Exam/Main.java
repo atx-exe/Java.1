@@ -7,10 +7,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    public Stage primaryStage;
+
+    public static void pvpc() {
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent game = FXMLLoader.load(getClass().getResource("gameMenu.fxml"));
-        primaryStage.setScene(new Scene(game));
+        Parent gameMenu = FXMLLoader.load(getClass().getResource("gameMenu.fxml"));
+        primaryStage.setScene(new Scene(gameMenu));
 
         primaryStage.setTitle("XO Game");
         primaryStage.setResizable(false);

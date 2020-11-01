@@ -15,7 +15,7 @@
     <Label  styleClass="title"  text="XO Game"/>
     <VBox   styleClass="vbox">
         <Label                  text="Выберите Тип игры:"/>
-        <Button                 text="Player vs PC"/>
+        <Button                fx:id="pvpc" onAction="#pvpc"  text="Player vs PC"/>
         <Button disable="true"  text="Player vs Player"/>
         <Button disable="true"  text="PC vs PC"/>
     </VBox>
